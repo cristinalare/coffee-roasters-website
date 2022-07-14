@@ -64,7 +64,6 @@ button {
   font-family: 'Fraunces', serif;
   font-weight: 900;
   line-height: 1.25;
-
 }
 
 h1 {
@@ -91,10 +90,17 @@ button {
   font-size: var(--button-font);
 }
 
+li {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--nav-font);
+  letter-spacing: 0.92px;
+}
+
 /* main sections */
 
 .container {
-  margin: 6rem var(--doc-margin);
+  margin: 8rem var(--doc-margin);
 }
 
 .container:nth-child(odd) {

@@ -2,6 +2,7 @@ import './Home.css';
 import Cards from '../../components/Cards/Cards';
 import Steps from '../../components/Steps/Steps';
 import Button from '../../components/Button/Button';
+import Footer from '../../components/Footer/Footer';
 
 export default function Home () {
     const coffeeTypes = [
@@ -87,6 +88,9 @@ export default function Home () {
             {<Steps />}
             <Button text="Create your plan" />
         </div>
+
+        {/* footer */}
+        <Footer />
     </div>
     
  )

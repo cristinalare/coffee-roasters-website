@@ -17,13 +17,6 @@ nav ul {
     z-index: 2;
 }
 
-nav li {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: var(--nav-font);
-    letter-spacing: 0.92px;
-}
-
 .active-nav {
     transition: color 0.4s ease-out;
     color: var(--dark-grey);
@@ -46,9 +39,7 @@ nav li {
         font-weight: 900;
         text-transform: capitalize;
     }
-    .inactive-nav {
-        color: var(--dark-grey);
-    }
+    
     .mobile-icon {
         display: block;
         cursor: pointer;

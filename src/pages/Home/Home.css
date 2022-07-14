@@ -51,12 +51,13 @@
     color: transparent;
     background-clip: text;
     margin-bottom: 2.5rem;
+    padding: 0;
 }
 .coffee-types {
     max-width: 60rem;
 }
 
-.coffee-types .card {
+.coffee-types .card:not(:last-child) {
     margin-bottom: 4rem;
 }
 
