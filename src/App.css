@@ -1,38 +1,132 @@
-.App {
+/* General styles */
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --cyan: #0E8784;
+  --light-cyan: #66D2CF;
+  --dark-grey: #333D4B;
+  --grey: #83888F;
+  --orange: #FDD6BA;
+  --cream: #FEFCF7;
+  --disabled: #E2DEDB;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* typography */
+:root {
+  --body: 1rem;
+  --body-line-height: 1.625rem;
+  --button-font: 1.125rem;
+  --nav-font: 0.75rem;
+  --nav-font-mobile: 1.5rem;
+  --title-s: 1.5rem; /* 24px */
+  --title-sm: 1.75rem; /* 28px */
+  --title-m: 2rem; /* 32px */
+  --title-l: 2.5rem; /* 40px */
+  --title-xl: 4.5rem; /* 72px */
+  --title-xxl: 9.375rem; /* 140px */
+  --doc-margin: 6%;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  color: var(--dark-grey);
+  background-color: #FEFCF7;
+  font-weight: 400;
+  font-size: var(--body);
+  line-height: var(--body-line-height);
+
+  overflow-x: hidden;
+  max-width: 90rem;
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+button {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  line-height: 1.25;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+  font-size: var(--title-l);
+}
+
+@media only screen and (min-width: 68rem) { 
+  h1 {
+    font-size: var(--title-xl);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+  font-size: var(--title-sm);
+  padding: 1.5rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+  font-size: var(--title-s);
+  margin-bottom: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* main sections */
+
+.container {
+  margin: 6rem var(--doc-margin);
 }
+
+.container:nth-child(odd) {
+  color: var(--cream);
+  background-color: #2C343E;
+  border-radius: 10px;
+}
+
+.container:nth-child(odd) p:first-of-type {
+  opacity: 0.8;
+}
+
+/* buttons */
+
+button {
+  font-size: var(--button-font);
+  background-color: var(--cyan);
+  color: var(--cream);
+  border: none;
+  padding: 1em 2em;
+  border-radius: 6px;
+}
+button:hover {
+  background-color: var(--light-cyan);
+}
+button:disabled,
+button[disabled] {
+  background-color: var(--disabled);
+}
+
+/* options ---- */
+.option {
+  background-color: var(--cream);
+}
+
+.option:hover {
+  background-color: var(--orange);
+}
+.option.active {
+  background-color: var(--cyan);
+}
+
+
