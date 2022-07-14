@@ -142,7 +142,7 @@
         padding: 0 5%;
     }
 }
-@media only screen and (min-width: 37.5rem) and (min-width: 68rem) {
+@media only screen and (min-width: 68rem) {
     .choose-us-cards .card {
         margin: 0 auto;
         width: 30%;
@@ -152,6 +152,23 @@
         height: 80%;
     }
     .cards.choose-us-cards {
+        padding: 0 5%;
+    }
+}
+
+/* how it works */
+.how-it-works h3 {
+    color: var(--grey);
+    margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 37.5rem) {
+    .how-it-works {
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 68rem) {
+    .how-it-works {
         padding: 0 5%;
     }
 }

@@ -1,5 +1,7 @@
 import './Home.css';
 import Cards from '../../components/Cards/Cards';
+import Steps from '../../components/Steps/Steps';
+import Button from '../../components/Button/Button';
 
 export default function Home () {
     const coffeeTypes = [
@@ -55,13 +57,13 @@ export default function Home () {
             <div className="hero-content">
                 <h1>Great coffee made simple.</h1>
                 <p>Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
-                <button>Create your plan</button>
+                <Button text='Create your plan'/>
             </div>
         </div>
 
         {/* coffee */}
         <div className="container">
-            <h2 className="collection-heading">our collection</h2>
+            <h2 className="collection-heading big-heading">our collection</h2>
             <div className="coffee-types cards">
                 { <Cards cards={coffeeTypes} /> }
             </div>
@@ -79,8 +81,11 @@ export default function Home () {
             </div>
         </div>
 
-        <div className="container">
+        {/* how it works: steps */}
+        <div className="container how-it-works">
             <h3>How it works</h3>
+            {<Steps />}
+            <Button text="Create your plan" />
         </div>
     </div>
     

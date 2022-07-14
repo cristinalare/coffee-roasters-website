@@ -1,0 +1,44 @@
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-block: 4rem;
+}
+
+/* number */
+.step h4 {
+    color: var(--orange);
+    font-size: var(--title-xl);
+}
+
+/* tablet */
+@media only screen and (min-width: 37.5rem) {
+    .bar {
+        width: 76%;
+        max-width: 34rem;
+    }
+    .steps {
+        text-align: left;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding-block: 2rem;
+        max-width: 45rem;
+    }
+    /* name */
+    .step h2 {
+        max-width: 10ch;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 68rem) {
+    .bar {
+        width: 79%;
+        max-width: 51rem;
+    }
+
+    .steps {
+        max-width: 65rem;
+        gap: 6rem;
+    }
+}
