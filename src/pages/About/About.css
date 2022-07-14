@@ -1,0 +1,124 @@
+.about-page h2,
+.about-page h1 {
+    font-size: var(--title-m);
+}
+@media only screen and (min-width: 68rem) {
+    .about-page h2,
+    .about-page h1 {
+        font-size: var(--title-l);
+    }
+}
+
+/* commitment 
+==============*/
+
+.commitment {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.commitment img {
+    border-radius: 8px;
+}
+
+/* tablet */
+@media only screen and (min-width: 47rem) {
+    .commitment {
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
+        text-align: left;
+    }
+    .commitment-content {
+        max-width: 55%;
+    }
+}
+/* desktop */
+@media only screen and (min-width: 68rem) {
+    .commitment {
+        padding: 0 8vw;
+        gap: 6rem;
+    }
+}
+
+/* quality section
+================== */
+.quality {
+    padding: 0 var(--doc-margin);
+    margin-top: 15rem;
+}
+
+.quality img {
+    transform: translateY(-55%);
+    border-radius: 8px;
+}
+
+.quality-content {
+    transform: translateY(-4.5rem);
+}
+
+/* desktop */
+@media only screen and (min-width: 68rem) {
+    .quality {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        text-align: left;
+        gap: 8rem;
+    }
+    .quality-content {
+        width: 40%;
+        transform: none;
+        padding-top: 7%;
+    }
+    .quality img {
+        transform: translateY(-25%);
+        border-radius: 8px;
+    }
+}
+
+/* headquarters
+=============== */
+
+.headquarters {
+    white-space: pre-line;
+}
+
+.headquarters .card {
+    padding-top: 4rem;
+}
+
+.headquarters p {
+    line-height: 1;
+}
+
+/* tablet */
+@media only screen and (min-width: 37.5rem) {
+    .headquarters {
+        text-align: left;
+    }
+    .headquarters-cards {
+        display: flex;
+        gap: 7vw;
+    }
+    .headquarters-cards .card {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .headquarters-cards .card-content {
+        padding: 0;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 68rem) {
+    .headquarters {
+        padding: 0 8%;
+
+    }
+    .headquarters-cards {
+        gap: 10rem;
+    }
+}

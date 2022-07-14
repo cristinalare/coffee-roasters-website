@@ -1,6 +1,5 @@
 import './Steps.css';
 import bar from './bar-icon.svg';
-import { useEffect } from 'react';
 
 export default function Steps () {
     const steps = [

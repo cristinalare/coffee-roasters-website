@@ -1,8 +1,8 @@
 import './Home.css';
+import Hero from '../../components/Hero/Hero';
 import Cards from '../../components/Cards/Cards';
 import Steps from '../../components/Steps/Steps';
 import Button from '../../components/Button/Button';
-import Footer from '../../components/Footer/Footer';
 
 export default function Home () {
     const coffeeTypes = [
@@ -47,20 +47,18 @@ export default function Home () {
         }
     ];
 
+    const hero = {
+        mobileImg: '/assets/home/mobile/image-hero-coffeepress.jpg',
+        tabletImg: '/assets/home/tablet/image-hero-coffeepress.jpg',
+        desktopImg: '/assets/home/desktop/image-hero-coffeepress.jpg',
+        alt: 'coffeepress',
+        title: 'Great coffee made simple.',
+        description: 'Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.'
+    }
+
  return (
     <div>
-        <div className="hero container">
-            <picture>
-                <source media="(min-width: 68rem)" srcSet="/assets/home/desktop/image-hero-coffeepress.jpg" />
-                <source media="(min-width: 37.5rem)" srcSet="/assets/home/tablet/image-hero-coffeepress.jpg" />
-                <img className="hero-img" src="/assets/home/mobile/image-hero-coffeepress.jpg" alt="coffeepress"/>
-            </picture>
-            <div className="hero-content">
-                <h1>Great coffee made simple.</h1>
-                <p>Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
-                <Button text='Create your plan'/>
-            </div>
-        </div>
+        <Hero hero={hero} />
 
         {/* coffee */}
         <div className="container">
@@ -84,13 +82,10 @@ export default function Home () {
 
         {/* how it works: steps */}
         <div className="container how-it-works">
-            <h3>How it works</h3>
+            <h3 class="gray-heading">How it works</h3>
             {<Steps />}
             <Button text="Create your plan" />
         </div>
-
-        {/* footer */}
-        <Footer />
     </div>
     
  )

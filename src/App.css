@@ -78,12 +78,21 @@ h1 {
 
 h2 {
   font-size: var(--title-sm);
-  padding: 1.5rem 0;
+  padding-bottom: 1.5rem;
 }
 
 h3 {
   font-size: var(--title-s);
   margin-bottom: 1.5rem;
+}
+
+h4 {
+  margin-bottom: 1.5rem;
+}
+
+.gray-heading {
+  color: var(--grey);
+  margin-bottom: 2rem;
 }
 
 button {
@@ -101,12 +110,12 @@ li {
 
 .container {
   margin: 8rem var(--doc-margin);
+  border-radius: 10px;
 }
 
 .container:nth-child(odd) {
   color: var(--cream);
   background-color: #2C343E;
-  border-radius: 10px;
 }
 
 .container:nth-child(odd) p:first-of-type {
