@@ -26,9 +26,9 @@ export default function Plan () {
 
 
     const hero = {
-        mobileImg: '/assets/plan/mobile/image-hero-blackcup.jpg',
-        tabletImg: '/assets/plan/tablet/image-hero-blackcup.jpg',
-        desktopImg: '/assets/plan/desktop/image-hero-blackcup.jpg',
+        mobileImg: '/coffee-roasters-website/assets/plan/mobile/image-hero-blackcup.jpg',
+        tabletImg: '/coffee-roasters-website/assets/plan/tablet/image-hero-blackcup.jpg',
+        desktopImg: '/coffee-roasters-website/assets/plan/desktop/image-hero-blackcup.jpg',
         alt: 'blackcup',
         title: 'Create a plan',
         description: 'Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.'

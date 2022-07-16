@@ -10,23 +10,23 @@ export default function Home () {
         {
             name: 'Gran Espresso',
             description: 'Light and flavorful blend with cocoa and black pepper for an intense experience',
-            src: '/assets/home/desktop/image-gran-espresso.png'
+            src: '/coffee-roasters-website/assets/home/desktop/image-gran-espresso.png'
 
         },
         {
             name: 'Planalto',
             description: 'Brazilian dark roast with rich and velvety body, and hints of fruits and nuts',
-            src: '/assets/home/desktop/image-planalto.png'
+            src: '/coffee-roasters-website/assets/home/desktop/image-planalto.png'
         },
         {   
             name: 'Piccollo',
             description: 'Mild and smooth blend featuring notes of toasted almond and dried cherry',
-            src: '/assets/home/desktop/image-piccollo.png'
+            src: '/coffee-roasters-website/assets/home/desktop/image-piccollo.png'
         },
         {
             name: 'Danche',
             description: 'Ethiopian hand-harvested blend densely packed with vibrant fruit notes',
-            src: '/assets/home/desktop/image-danche.png'
+            src: '/coffee-roasters-website/assets/home/desktop/image-danche.png'
         }
     ];
 
@@ -34,24 +34,24 @@ export default function Home () {
         {
             name: 'Best quality',
             description: 'Discover an endless variety of the world’s best artisan coffee from each of our roasters.',
-            src: '/assets/home/desktop/icon-coffee-bean.svg'
+            src: '/coffee-roasters-website/assets/home/desktop/icon-coffee-bean.svg'
         },
         {
             name: 'Exclusive benefits',
             description: 'Special offers and swag when you subscribe, including 30% off your first shipment.',
-            src: '/assets/home/desktop/icon-gift.svg'
+            src: '/coffee-roasters-website/assets/home/desktop/icon-gift.svg'
         },
         {
             name: 'Free shipping',
             description: 'We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.',
-            src: '/assets/home/desktop/icon-truck.svg'
+            src: '/coffee-roasters-website/assets/home/desktop/icon-truck.svg'
         }
     ];
 
     const hero = {
-        mobileImg: '/assets/home/mobile/image-hero-coffeepress.jpg',
-        tabletImg: '/assets/home/tablet/image-hero-coffeepress.jpg',
-        desktopImg: '/assets/home/desktop/image-hero-coffeepress.jpg',
+        mobileImg: '/coffee-roasters-website/assets/home/mobile/image-hero-coffeepress.jpg',
+        tabletImg: '/coffee-roasters-website/assets/home/tablet/image-hero-coffeepress.jpg',
+        desktopImg: '/coffee-roasters-website/assets/home/desktop/image-hero-coffeepress.jpg',
         alt: 'coffeepress',
         title: 'Great coffee made simple.',
         description: 'Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.'
