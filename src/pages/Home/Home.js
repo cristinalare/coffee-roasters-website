@@ -3,6 +3,7 @@ import Hero from '../../components/Hero/Hero';
 import Cards from '../../components/Cards/Cards';
 import Steps from '../../components/Steps/Steps';
 import Button from '../../components/Button/Button';
+import {Link} from 'react-router-dom';
 
 export default function Home () {
     const coffeeTypes = [
@@ -82,9 +83,9 @@ export default function Home () {
 
         {/* how it works: steps */}
         <div className="container how-it-works">
-            <h3 class="gray-heading">How it works</h3>
-            {<Steps />}
-            <Button text="Create your plan" />
+            <h3 className="gray-heading">How it works</h3>
+            <Steps />
+            <Link to="/create-a-plan"><Button text="Create your plan" /></Link>
         </div>
     </div>
     

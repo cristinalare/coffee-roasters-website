@@ -1,0 +1,98 @@
+/* steps section 
+================= */
+
+.plan-section .how-it-works {
+    padding: 5rem var(--doc-margin);
+}
+
+/* remove margins on mobile and tablet */
+@media only screen and (max-width: 68rem) {
+    .plan-section .how-it-works {
+        margin-left: unset;
+        margin-right: unset;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 37.5rem) {
+    /* add padding top because on tablet appears the bar */
+    .plan-section .steps {
+        padding: 0;
+        padding-top: 2rem;
+    }
+}
+
+/* questions section
+=================== */
+
+.questions-section {
+    display: flex;
+    gap: 6%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.questions {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    max-width: 50rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.option {
+    border-radius: 8px;
+    background-color: var(--disabled);
+    padding: var(--doc-margin);
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+.option:hover {
+    background-color: var(--orange);
+}
+
+.option.selected {
+    color: #FFFFFF;
+    background-color: var(--cyan);
+}
+  
+/* tablet */
+@media only screen and (min-width: 37.5rem) {
+    .options {
+        flex-direction: row;
+    }
+    .option {
+        padding-bottom: 6rem;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 68rem) {
+    .questions {
+        gap: 8rem;
+    }
+    .options {
+        max-width: 50rem;
+    }
+    .question-name {
+        font-size: var(--title-l);
+    }
+}
+
+/* submit button */
+.submit-btn {
+    width: fit-content;
+    margin: auto;
+}
+/* align left the button on desktop */
+@media only screen and (min-width: 72.5rem) {
+    .submit-btn {
+        margin-right: 0;
+    }
+}

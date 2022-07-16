@@ -1,15 +1,21 @@
-import {NavLink} from 'react-router-dom';
+import {NavLink, useLocation} from 'react-router-dom';
 import logo from './logo.svg';
 import menuClose from './icon-close.svg';
 import menuOpen from './icon-hamburger.svg';
 import './Navigation.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Navigation () {
     const [activeMenu, setActiveMenu] = useState(false);
+    const {pathname} = useLocation();
+
     const toggleMenu = () => {
         setActiveMenu(!activeMenu);
     };
+
+    useEffect(() => {
+        setActiveMenu(false);
+    }, [pathname]);
 
     return (
         <nav>
@@ -42,6 +48,5 @@ export default function Navigation () {
                 </li>
             </ul>
         </nav>
-        
     )
 }

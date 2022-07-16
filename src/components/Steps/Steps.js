@@ -1,7 +1,17 @@
 import './Steps.css';
 import bar from './bar-icon.svg';
+import useWindowDimensions from '../useWindowDimensions';
+import { useState, useEffect } from 'react';
 
 export default function Steps () {
+
+    // display the steps bar icon only when not on mobile
+    const [notMobile, setNotMobile] = useState();
+    const { height, width } = useWindowDimensions();
+    useEffect(() => {
+        window.matchMedia("(min-width: 37.5rem)").matches ? setNotMobile(true) : setNotMobile(false);
+    }, [width]);
+
     const steps = [
         {
             no: '01',
@@ -19,8 +29,6 @@ export default function Steps () {
             description: 'We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.'
         }
     ];
-
-    const notMobile = window.matchMedia("(min-width: 37.5rem)").matches;
 
     return (
         <div>

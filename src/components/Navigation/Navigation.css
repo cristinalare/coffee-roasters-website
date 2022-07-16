@@ -46,15 +46,16 @@ nav ul {
     }
 
     nav ul {
-        position: absolute;
+        position: fixed;
+        z-index: 10;
         flex-direction: column;
         gap: 3rem;
-        right: -120%;
-        top: 200%;
+        right: -100%;
+        top: 10%;
         
         padding-top: 7rem;
         transition: all 0.4s ease-out;
-        width: calc(100vw - var(--doc-margin) - var(--doc-margin));
+        width: 100vw;
         height: 100vh;
         background: linear-gradient(180deg, #FEFCF7 40%, rgba(254, 252, 247, 0.85) 55.94%);
 
