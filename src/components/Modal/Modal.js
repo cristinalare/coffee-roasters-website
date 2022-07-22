@@ -2,9 +2,9 @@ import './Modal.css';
 import Button from '../Button/Button';
 import { CSSTransition } from 'react-transition-group';
 import useWindowDimensions from '../useWindowDimensions';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
-export default function Modal ({show, setShow, order}) {
+const Modal = React.memo(({show, setShow, order}) => {
     // display the price outside of the button only when not on mobile
     const [notMobile, setNotMobile] = useState();
     const { height, width } = useWindowDimensions();
@@ -46,4 +46,6 @@ export default function Modal ({show, setShow, order}) {
             </div>
         </CSSTransition>
     );
-}
+});
+
+export default Modal;

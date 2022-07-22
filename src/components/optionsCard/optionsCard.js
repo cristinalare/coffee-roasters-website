@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useInView } from 'react-intersection-observer';
 
-export default function OptionsCard ({selectedArr, setSelectedArr, id, options, setInViewQuestion}) {
+const OptionsCard = React.memo(({selectedArr, setSelectedArr, id, options, setInViewQuestion}) => {
     const { ref, inView } = useInView({ root: document.querySelector('#questions'), threshold: [0.8], });
 
     useEffect(() => {
@@ -27,4 +27,6 @@ export default function OptionsCard ({selectedArr, setSelectedArr, id, options, 
         ))}
         </div>
     )
-}
+});
+
+export default OptionsCard;

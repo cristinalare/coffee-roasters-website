@@ -4,6 +4,7 @@ import Cards from '../../components/Cards/Cards';
 import Steps from '../../components/Steps/Steps';
 import Button from '../../components/Button/Button';
 import {Link} from 'react-router-dom';
+import { Parallax } from 'react-scroll-parallax';
 
 export default function Home () {
     const coffeeTypes = [
@@ -63,7 +64,9 @@ export default function Home () {
 
         {/* coffee */}
         <div className="container">
+            <Parallax easing={'easeOutCubic'} scaleX={[0.6, 1.1]}>
             <h2 className="collection-heading big-heading">our collection</h2>
+            </Parallax>
             <div className="coffee-types cards">
                 { <Cards cards={coffeeTypes} /> }
             </div>
@@ -88,6 +91,5 @@ export default function Home () {
             <Link to="/create-a-plan"><Button text="Create your plan" /></Link>
         </div>
     </div>
-    
  )
 }
