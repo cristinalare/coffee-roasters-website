@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/coffee-roasters-website/static/css/main.fc0ee725.css",
-    "main.js": "/coffee-roasters-website/static/js/main.fa6176e0.js",
+    "main.css": "/coffee-roasters-website/static/css/main.2ca59d8d.css",
+    "main.js": "/coffee-roasters-website/static/js/main.a616001d.js",
+    "static/css/73.1bc7ea3a.chunk.css": "/coffee-roasters-website/static/css/73.1bc7ea3a.chunk.css",
+    "static/js/73.f96933a5.chunk.js": "/coffee-roasters-website/static/js/73.f96933a5.chunk.js",
     "static/js/787.72d8f8ce.chunk.js": "/coffee-roasters-website/static/js/787.72d8f8ce.chunk.js",
     "static/media/logo.svg": "/coffee-roasters-website/static/media/logo.a2512c0fbb640a4458b2d5ab3d4b0a16.svg",
     "index.html": "/coffee-roasters-website/index.html",
     "static/media/bar-icon.svg": "/coffee-roasters-website/static/media/bar-icon.52191bfd0229a636e588d929d1948a67.svg",
     "static/media/icon-close.svg": "/coffee-roasters-website/static/media/icon-close.4ead4ec3073b5cd566faee8992dd1add.svg",
     "static/media/icon-hamburger.svg": "/coffee-roasters-website/static/media/icon-hamburger.dfd5971a8d314a186e9f7026c53ba6c7.svg",
-    "main.fc0ee725.css.map": "/coffee-roasters-website/static/css/main.fc0ee725.css.map",
-    "main.fa6176e0.js.map": "/coffee-roasters-website/static/js/main.fa6176e0.js.map",
+    "main.2ca59d8d.css.map": "/coffee-roasters-website/static/css/main.2ca59d8d.css.map",
+    "main.a616001d.js.map": "/coffee-roasters-website/static/js/main.a616001d.js.map",
+    "73.1bc7ea3a.chunk.css.map": "/coffee-roasters-website/static/css/73.1bc7ea3a.chunk.css.map",
+    "73.f96933a5.chunk.js.map": "/coffee-roasters-website/static/js/73.f96933a5.chunk.js.map",
     "787.72d8f8ce.chunk.js.map": "/coffee-roasters-website/static/js/787.72d8f8ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc0ee725.css",
-    "static/js/main.fa6176e0.js"
+    "static/css/main.2ca59d8d.css",
+    "static/js/main.a616001d.js"
   ]
 }
